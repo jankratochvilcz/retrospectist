@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import LeftPane from './LeftPane';
-import Reports from './reports';
-import Retrospectives from './retrospectives';
-import { RETROSPECTIVES, REPORTS } from '../configuration/routes';
+import Reports from '../reports';
+import Retrospectives from '../retrospectives';
+import { RETROSPECTIVES, REPORTS } from '../../configuration/routes';
 
 class App extends Component {
   render() {

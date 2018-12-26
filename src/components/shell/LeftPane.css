@@ -10,6 +10,9 @@
 .left-pane-logo {
     font-family: Consolas;
     font-size: large;
-    margin-bottom: 24px;
     font-variant-caps: all-small-caps;
+}
+
+.left-pane-last-in-section {
+    margin-bottom: 24px;
 }
