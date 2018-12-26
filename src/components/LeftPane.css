@@ -1,0 +1,15 @@
+.left-pane-root-container {
+    display: flex;
+    flex-direction: column;
+
+    background:#05668d;
+    color: white;
+    padding: 12px;
+}
+
+.left-pane-logo {
+    font-family: Consolas;
+    font-size: large;
+    margin-bottom: 24px;
+    font-variant-caps: all-small-caps;
+}

@@ -1,24 +1,23 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
+import LeftPane from './LeftPane';
+import Reports from './reports';
+import Retrospectives from './retrospectives';
+import { RETROSPECTIVES, REPORTS } from '../configuration/routes';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Router>
+        <div className="root-container">
+          <LeftPane className="left-pane" />
+          <div className="content-container">
+            <Route path={RETROSPECTIVES} component={Retrospectives} />
+            <Route path={REPORTS} component={Reports} />
+        </div>
+        </div>
+      </Router>
     );
   }
 }
